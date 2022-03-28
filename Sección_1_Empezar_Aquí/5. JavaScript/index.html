@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+
+    <button onclick="presionoClick()">Botón</button>
+
+    <!--Acá no sucede nada y nos va a mostrar el valor de la variable-->
+    <!--
+    <script src="js/app.js"></script>
+    <script src="js/app2.js"></script>
+    -->
+
+    <!--Que pasa si invertimos el orden del llamado de los archivos, por lo tanto para ver el resultado comentamos lo anterior-->
+    <!--Lo que sucede es que nos va a arrojar error ya que la definición de la variable se esta llamando después de usarla-->
+    <!--En otras palabras cuando crea el objeto global al barrer el archivo no encuntra la definción de la variable y manda un error de referencia-->
+    <script src="js/app2.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
