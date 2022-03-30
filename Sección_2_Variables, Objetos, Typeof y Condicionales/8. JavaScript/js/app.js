@@ -1,4 +1,5 @@
 // Metodos y el objeto THIS
+// Los Métodos en JavaScript no son más que funciones dentro de un objeto
 
 var persona ={
 
