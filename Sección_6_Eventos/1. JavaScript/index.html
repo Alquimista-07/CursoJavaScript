@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <!--Agregamos un estilo praa la caja div que creamos con el evento click-->
+    <style type="text/css">
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!------------------------------------------------------------------->
+    <!--Dentro de la capeta se encuentra un archivo llamado Eventos.pdf-->
+    <!--con eventos que podemos usar ya que acá no se muestran todos   -->
+    <!------------------------------------------------------------------->
+
+    <h2>Click Sencillo</h2>
+    <!--Disparamos un evento (llamado a función) cuando se haga click sencillo sobre el botoón-->
+    <button onclick="evento()">Botón Click Sencillo</button>
+    <br>
+    <br>
+    <h2>Doble Click</h2>
+    <!--Disparamos un evento (llamado a función) cuando se haga doble click sobre el botoón-->
+    <button ondblclick="evento()">Botón Doble Click</button>
+    <br>
+    <br>
+    <h2>Click Sencillo Sobre Elemento Div</h2>
+    <!--Ahora no necesariamente estos eventos se aplican a botones, también se puede a otros elementos como se muestra a continuación-->
+    <!--NOTA: También podemos agregar eventos a casi cualquier elemento html de nuestra página-->
+    <div onclick="evento()">
+        <!--Agregmos un evento al hacer click sobre esta caja de color rojo-->
+    </div>
+    <br>
+    <br>
+    <h2>Evento Focus</h2>
+    <!--Otro evento intersante es el onfocus el cual se dispara cuando agarra el foco (click dentro de la caja de texto)-->
+    <input type="text" onfocus="evento()">
+    <br>
+    <br>
+    <h2>Perder Foco</h2>
+    <!--Tenemos otro el cual es el onblur el cual se ejecuta cuando perdemos el foco-->
+    <input type="text" onblur="evento()">
+    <br>
+    <br>
+    <h2>Mouse Out</h2>
+    <!--Otro evento es el onmouseout el cual hace que cuando el mouse este dentro del elemento y salgamos se dispara-->
+    <input type="text" onmouseout="evento()">
+
+    <!--PERO NO ES RECOMENDABLE AGERGAR TODOS LOS EVENTOS SOBRE EL HTML POR LO TANTO UNA MARERA DE AGREGAR EVENTOS Y TENER MÁS ORDENADO
+        ES LA SIGUIENTE: -->
+
+    <h1>FORMA MÁS ORDENADA DE PONER EVENTOS</h1>
+    <br>
+    <h2>Keypressed</h2>
+    <!--Le asignamos un id-->
+    <input type="text" id="objDemo">
+    <br>
+    <br>
+    <h2>Click</h2>
+    <!--Le asignamos un id-->
+    <button id="objDemo2">Soy un botón</button>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
