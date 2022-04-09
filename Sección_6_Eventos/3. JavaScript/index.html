@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+
+    <!--Este evento onsubmit es util para hacer validaciones de datos sobre formularios, como por ejemplo que el correo este bien en su estructura, que solo se hayan escrito número entre otras cosas que se podrían validar-->
+    <!--Si dejamos return true hace el posteo y se ve como si recargara la página. Y si dejamos con false ya no hace posteo-->
+    <!--Pero para que quede más ordenado podemos crear una función validar que se encargue de esas validaciones-->
+    <!-- <form action="" onsubmit="return true;"> -->
+    <form action="" onsubmit="return validar();">
+
+        <!--Se puede usar el id pero la información es posteada a través del atributo name-->
+        <input type="text" id="txtIdNombre" name="txtNombre">
+        <br>
+        <br>
+        <input type="text" id="txtIdApellido" name="txtApellido">
+        <br> 
+        <br> 
+        <button type="submit">Postear Data</button>
+
+    </form>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
